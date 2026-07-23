@@ -386,3 +386,55 @@ body{
     justify-content: center;
     align-items: center;
  }
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0 10px;
+    }
+
+    .isiBanner {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    #fotoBmw {
+        width: 100%;
+        max-width: 330px;
+        height: auto;
+    }
+
+    .kontenCoy {
+        flex-direction: column;
+        margin: 40px 10px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #fotoBmw1 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .spekCard {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    #bmw318i {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .isiNav {
+        margin: 0 10px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
