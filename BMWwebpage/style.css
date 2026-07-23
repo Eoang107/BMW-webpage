@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: cultive;
+    src: url(Fonts/CutiveMono-Regular.ttf);
+}
+
+@keyframes munculup {
+    from{opacity: 0;
+         transform: translateY(20px);}
+    
+    to{opacity: 1;
+        transform: translateY(0px);}
+}
+
+@keyframes efekPudar {
+                from { opacity: 0.3; }
+                to { opacity: 1; }
+}
+
+.konten-pudar {
+    animation: efekPudar 0.8s ease-in-out;
+}
+
+:root {
+    --biru : #0e79b2;
+    --ireng : #191923;
+    --putih : #fbfef9;
+    --kuning : #ffc857;
+    --birutua : #235789;
+}
+
+body{
+    background-color: var(--putih);
+    font-family: monospace, 'Courier New', Courier;
+    animation: efekPudar 0.8s ease-in-out;
+}
+
+.nav {
+    background-color: var(--birutua) ;
+    color: var(--putih);
+}
+
+.isiNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px;
+    font-weight: bold;
+    margin: 0 40px;
+    animation: munculup 0.8s ease-out;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-btn button{
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: var(--putih);
+    font-family: monospace, Courier, 'Courier New';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-btn button:hover{
+    transform: scale(1.1);
+    color: var(--kuning);
+}
+
+#sambutan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tgl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.heroBanner {
+    background-color: var(--biru);
+    padding: 12px;
+}
+
+.isiBanner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 40px 0px;
+    animation: munculup 0.8s ease-out;
+}
+
+#fotoBmw {
+    width: 330px;
+    height: 230px;
+    object-fit: cover;
+    border: solid var(--putih) 3px;
+    border-radius: 10px;
+    box-shadow: var(--putih) 0 9px 0;
+}
+
+.teksBanner {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: justify;
+    color: var(--putih);
+}
+
+#evolusiBmw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border:solid var(--ireng) 3px;
+    box-shadow: var(--ireng) 8px 10px 0;
+    padding: 12px;
+    font-weight: bold;
+    animation: munculup 0.8s ease-out;
+}
+
+.kontenCoy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 30px;
+    gap: 15px;
+    animation: munculup 0.8s ease-out;
+}
+
+.kontenCoy.konten-pudar {
+    animation: efekPudar 0.8s ease-in-out !important;
+}
+
+#fotoBmw1 {
+    width: 530px;
+    height: 330px;
+    object-fit: cover;
+    border: solid var(--ireng) 6px;
+    border-radius: 10px 60px 10px 60px;
+    box-shadow: var(--ireng) 0 10px 0;
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#prev, #next {
+    font-size: 30px;
+    border-radius: 8px;
+    background: none;
+    box-shadow: var(--ireng) 0 5px 0;
+    padding: 10px;
+    align-self: center;
+}
+
+#prev:hover{
+    transform: scale(1.1);
+    background-color: var(--kuning);
+}
+
+#next:hover{
+    transform: scale(1.1);
+    background-color: var(--kuning);
+}
+
+#prev:active{
+    transform: translateY(5px);
+}
+
+#next:active{
+    transform: translateY(5px);
+}
+
+.headTeksKonten {
+    border-bottom: solid var(--ireng) 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#decor {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    cursor: default;
+}
+
+#teksDecor {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.teksKonten {
+    flex-wrap: wrap;
+    display: flex;
+    border: solid var(--ireng) 3px;
+}
+
+.mainTeksKonten {
+    padding: 12px;
+}
+
+#teksBmw1 {
+    text-align: justify;
+}
+
+.spekBmw {
+    background-color: var(--biru);
+    color: var(--putih);
+    border:solid var(--birutua) 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    animation: munculup 0.8s ease-out;
+}
+
+.headSpekBmw {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid var(--birutua) 5px;
+}
+
+#decor1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    cursor: default;
+}
+
+#decor2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    cursor: default;
+}
+
+#titleSpek {
+    display: flex;
+    justify-content: center;
+}
+
+#bmw318i, #bmw320i, #bmw323i {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 330px;
+    height: 230px;
+    object-fit: cover;
+    border: solid var(--putih) 3px;
+    border-radius: 10px;
+    box-shadow: var(--putih) 9px 9px 0;
+}
+
+.spekCard {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.teksSpek {
+    text-align: justify;
+}
+
+#titleBmwShowcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border:solid var(--ireng) 3px;
+    box-shadow: var(--ireng) 8px 10px 0;
+    padding: 12px;
+    font-weight: bold;
+    animation: munculup 0.8s ease-out;
+}
+
+.galeriContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.wadahGaleri {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    overflow: hidden;
+    border: solid var(--ireng) 6px;
+    border-radius: 10px;
+    box-shadow: var(--ireng) 0 10px 0;
+}
+
+.galeriIsi {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.foto-galeri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* Animasi pudar selama 0.8 detik */
+    z-index: 1;
+}
+
+.foto-galeri.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.kaki {
+    background-color: var(--biru);
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    border-top: solid var(--birutua) 5px;
+}
+
+#kopi {
+    display: flex;
+    justify-content: center;
+    color: var(--putih);
+    align-items: center;
+}
+
+#ig, #email{
+    width: 100px;
+    height: 100px;
+} 
+
+.Kontak {
+    display: flex;
+    border: solid var(--ireng) 5px;
+    margin: 90px;
+    background-color: #0e79b2;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    animation: munculup 0.8s ease-in-out;
+}
+
+.mainKontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    color: var(--putih);
+}
+ #ig, #email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
