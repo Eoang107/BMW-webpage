@@ -8,7 +8,7 @@ let next = document.getElementById ('next')
 let isiFoto = [
     'BMWwebpage/images/BMW-3-Series-E21.jpg',
     'BMWwebpage/images/E30.jpg',
-    'BMWwebpage/images/BMW-E36-M3-black-drift.jpg'
+    'BMWwebpage/images/BMW-E36-M-black-drift.jpg'
 ]
 let urutanNow = 0
 let teksBmw = [
